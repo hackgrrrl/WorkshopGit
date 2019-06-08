@@ -66,3 +66,56 @@ git push
 ```
 
 Agora se tudo deu certo até então, você poderá ver as suas mudanças no seu repositório no servidor do GitHub.
+
+## Passo 7 - Gerando um site com GitHub Pages
+
+<img align="right" width="500" src="assets/GitHubPages.png" alt="GitHub Pages" />
+
+Na aba de *Settings* desça até encontrar a parte de **GitHub Pages**, utilize o *Theme Chooser* para escolher um dos templates para o seu site clicando no botão *Choose a theme*
+
+**Pronto** agora você já tem sua própria página online através do GitHub Pages, e a url está disponível em *Settings > GitHub Pages*, se você renomear o repositório para "seunomedeusuario.github.io", essa será a url do seu site.
+
+**dica:** além dos templates disponíveis no *Theme Chooser* que são configuráveis em um clique, você também pode configurar manualmente outros templates depois se achar interessante, [aqui você encontra uma lista mais completa](http://jekyllthemes.org/). Você também pode criar [seus próprios templates Jekyll](https://jekyllrb.com/).
+
+
+
+## Valeu
+
+Este tutorial foi criado com ❤️ por [Otacilio Maia](otaciliomaia.com), sinta-se à vontade para tirar dúvidas através do email contato@otaciliomaia.com ou através de redes sociais.
+
+Aproveite e confira a sessão de indo além logo abaixo para conhecer mais conceitos de Git. 
+
+# Indo Além
+
+## Branch
+
+> git branch
+
+Retorna uma lista com os branches, o item marcado com um asterisco é o branch atual.
+
+### Conceito de branch
+
+Um dos conceitos mais interessantes de git é o de branch, por padrão todo repositório começa com um branch **master**, onde no 
+branch master deve conter a versão mais estável do seu código, que é entregue aos seus usuários.
+
+Justamente para evitar quebrar o código principal enqunto o desenvolvimento acontece, é muito comum criar-se pelo menos mais um branch, chamado **develop**, que é usado durante o desenvolvimento, e uma vez que a versão está estável o suficiente para um release, enviamos o código para o **master**.
+
+Uma das técnicas mais comuns de gerenciamento de repositório é o git flow, [este artigo explica com detalhes](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
+
+### Criando um branch
+
+> git branch nome-do-branch
+
+Cria um novo branch, note que ao criar um novo branch com git branch você continua no branch atual.
+
+## Pull 
+
+> git pull
+
+Obtém as mudanças do seu servidor remoto (No caso do repositório do GitHub), para o seu servidor local (No caso o seu computador), se não houver mudanças é exibida a mensagem ```Already up to date.```
+
+## Checkout
+
+> git checkout nome-do-branch
+
+Muda para o branch selecionado, também é possível criar um novo branch e mudar para o branch utilizando o comando ```git checkout -b "nome-do-branch"```
