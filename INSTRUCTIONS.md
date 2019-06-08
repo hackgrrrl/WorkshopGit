@@ -119,3 +119,19 @@ Obtém as mudanças do seu servidor remoto (No caso do repositório do GitHub), 
 > git checkout nome-do-branch
 
 Muda para o branch selecionado, também é possível criar um novo branch e mudar para o branch utilizando o comando ```git checkout -b "nome-do-branch"```
+
+## Stash
+
+> git stash
+
+Adiciona as mudanças não commitadas em uma pilha temporária. Muito últil quando você não quer mais continuar um certo trabalho no momento, ou para evitar conflitos momentaneamente.
+
+> git stash pop
+
+Recupe os arquivos do topo da pilha temporária de stash
+
+## Log
+
+> git log
+
+Lista o histórico de versionamento do branch atual.
